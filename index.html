@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <title>Decodificador de Texto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+      <a href="#"> <img src="./assets/logoa.png" class="logo" onclick="home()"></a>
+    </div>
+    <main class="infos">
+      <section class="input">
+        <textarea class="text-input" id="input-texto" placeholder="Digite seu texto"></textarea>
+
+        <div class="btn-div">
+          <p>
+            <img src="./assets/exclamacao.png" class="img-alerta"> Apenas letras minúsculas e sem acento.
+          </p>
+          <input class="buttom btn-criptografar" type="submit" value="Criptografar" id="btn-criptografar" onclick="acaoBotaoCriptografar()">
+          <input class="buttom btn-descriptografar" type="submit" value="Descriptografar" id="btn-descriptografar" onclick="acaoBotaoDescriptografar()">
+        </div>
+      </section>  
+      <section class="message-box"> 
+        <div class="not-found">
+          <div id="div-desaparece" class="message-box-div">
+            <img src="./assets/notfound.png">
+            <p><b>Nenhuma mensagem encontrada</b></p>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </div> 
+          <div id="div-aparece" style="display: none;">
+            <textarea class="text-output" id="mensagem" placeholder="Nenhuma mensagem"></textarea>
+            <br>
+            <br>
+            <input class="buttom btn-copiar" type="submit" value="Copiar" id="btn-copiar" onclick="acaoBotaoCopiar()">
+          </div>
+        </div>
+      </section>
+    </main>
+  <footer class="footer">
+      <span> &reg; Desenvolvido por shesleticia.</span>
+      <div>
+        <a href="https://github.com/shesleticia" target="_blank"><img src="./assets/github.png" alt="logo do github"></a>
+        <a href="https://www.linkedin.com/in/lopesleticia" target="_blank"><img src="./assets/linkedin.png"  alt="logo do linkedin"></a>
+      </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
